@@ -27,14 +27,15 @@
     self.adapter = [[JMEmptyCollectionAnimatedObject alloc] init];
     self.adapter.defautlCellIdentiy = @"cell";
     [self.adapter startViewControllerAnimated:self];
-    
     __weak typeof(self) weakself = self;
+    [self.adapter setCompleteBlock:^{
+        weakself.collectionView.delegate = weakself;
+        weakself.collectionView.dataSource = weakself;
+        [weakself.collectionView reloadData];
+    }];
+    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.adapter setCompleteBlock:^{
-            weakself.collectionView.delegate = weakself;
-            weakself.collectionView.dataSource = weakself;
-            [weakself.collectionView reloadData];
-        }];
+        [self.adapter endViewControllerAnimation];
     });
 }
 
@@ -54,7 +55,8 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    UICollectionViewCell * cell  = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    JMEmptyCollectionAnimatedObject * cell  = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    cell.isAnimation = NO;
     return cell;
 }
 

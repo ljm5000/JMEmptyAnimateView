@@ -26,13 +26,15 @@
     [self.adapter startViewControllerAnimated:self];
     
     __weak typeof(self) weakself = self;
+    [self.adapter setCompleteBlock:^{
+        
+        weakself.tableView.delegate = weakself;
+        weakself.tableView.dataSource = weakself;
+        [weakself.tableView reloadData];
+    }];
+    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.adapter setCompleteBlock:^{
-
-            weakself.tableView.delegate = weakself;
-            weakself.tableView.dataSource = weakself;
-            [weakself.tableView reloadData];
-        }];
+        [weakself.adapter endViewControllerAnimation];
     });
 }
 
@@ -50,6 +52,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     JMDemoTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    cell.isAnimation = NO;
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
