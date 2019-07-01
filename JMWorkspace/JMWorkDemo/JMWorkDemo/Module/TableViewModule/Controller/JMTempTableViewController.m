@@ -20,19 +20,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.adapter = [[JMEmptyTableAnimatedObject alloc] init];
+   
     [self.tableView registerNib:[UINib nibWithNibName:@"JMDemoTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
-    self.adapter.defautlCellIdentiy = @"cell";
+    
     [self.adapter startViewControllerAnimated:self];
-    
-    __weak typeof(self) weakself = self;
-    [self.adapter setCompleteBlock:^{
-        
-        weakself.tableView.delegate = weakself;
-        weakself.tableView.dataSource = weakself;
-        [weakself.tableView reloadData];
-    }];
-    
+   
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [weakself.adapter endViewControllerAnimation];
     });
@@ -58,6 +50,22 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+#pragma mark - lazy load
+-(JMEmptyTableAnimatedObject *)adapter{
+    if (!_adapter) {
+        _adapter= [[JMEmptyTableAnimatedObject alloc] init];
+        _adapter.defautlCellIdentiy = @"cell";
+        __weak typeof(self) weakself = self;
+        [_adapter setCompleteBlock:^{
+            
+            weakself.tableView.delegate = weakself;
+            weakself.tableView.dataSource = weakself;
+            [weakself.tableView reloadData];
+        }];
+    }
+    return _adapter;
 }
 
 

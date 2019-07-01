@@ -22,6 +22,7 @@
 		BF40218122C6FB23003A13B2 /* JMDemoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF40218022C6FB23003A13B2 /* JMDemoBaseViewController.m */; };
 		BF8A389022C9BE81005AE3BF /* JMEmptyAnimateView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8A388F22C9BE81005AE3BF /* JMEmptyAnimateView.framework */; };
 		BF8A389122C9BE81005AE3BF /* JMEmptyAnimateView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF8A388F22C9BE81005AE3BF /* JMEmptyAnimateView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BF8A389522C9E7E7005AE3BF /* JMDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8A389322C9E7E7005AE3BF /* JMDemoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +63,8 @@
 		BF40217F22C6FB23003A13B2 /* JMDemoBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMDemoBaseViewController.h; sourceTree = "<group>"; };
 		BF40218022C6FB23003A13B2 /* JMDemoBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMDemoBaseViewController.m; sourceTree = "<group>"; };
 		BF8A388F22C9BE81005AE3BF /* JMEmptyAnimateView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JMEmptyAnimateView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8A389222C9E7E7005AE3BF /* JMDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMDemoViewController.h; sourceTree = "<group>"; };
+		BF8A389322C9E7E7005AE3BF /* JMDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMDemoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +192,8 @@
 			children = (
 				BF40217F22C6FB23003A13B2 /* JMDemoBaseViewController.h */,
 				BF40218022C6FB23003A13B2 /* JMDemoBaseViewController.m */,
+				BF8A389222C9E7E7005AE3BF /* JMDemoViewController.h */,
+				BF8A389322C9E7E7005AE3BF /* JMDemoViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				BF40217622C62693003A13B2 /* JMTempCollectionViewCell.m in Sources */,
 				BF40216F22C62673003A13B2 /* JMTempColViewController.m in Sources */,
 				BF40217022C62673003A13B2 /* JMTempTableViewController.m in Sources */,
+				BF8A389522C9E7E7005AE3BF /* JMDemoViewController.m in Sources */,
 				BF40210E22C6036A003A13B2 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

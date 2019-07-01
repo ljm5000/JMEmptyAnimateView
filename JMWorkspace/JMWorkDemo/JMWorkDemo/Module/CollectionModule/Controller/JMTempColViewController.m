@@ -24,15 +24,8 @@
     
     [self.collectionView registerNib:[UINib nibWithNibName:@"JMTempCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"cell"];
 
-    self.adapter = [[JMEmptyCollectionAnimatedObject alloc] init];
-    self.adapter.defautlCellIdentiy = @"cell";
     [self.adapter startViewControllerAnimated:self];
-    __weak typeof(self) weakself = self;
-    [self.adapter setCompleteBlock:^{
-        weakself.collectionView.delegate = weakself;
-        weakself.collectionView.dataSource = weakself;
-        [weakself.collectionView reloadData];
-    }];
+    
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.adapter endViewControllerAnimation];
@@ -60,7 +53,20 @@
     return cell;
 }
 
-
+-(JMEmptyCollectionAnimatedObject *)adapter{
+    if (!_adapter) {
+        _adapter = [[JMEmptyCollectionAnimatedObject alloc] init];
+        _adapter.defautlCellIdentiy = @"cell";
+        
+        __weak typeof(self) weakself = self;
+        [_adapter setCompleteBlock:^{
+            weakself.collectionView.delegate = weakself;
+            weakself.collectionView.dataSource = weakself;
+            [weakself.collectionView reloadData];
+        }];
+    }
+    return _adapter;
+}
 
 
 
