@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF40213122C603C6003A13B2 /* JMEmptyAnimateView.h in Headers */ = {isa = PBXBuildFile; fileRef = BF40212F22C603C6003A13B2 /* JMEmptyAnimateView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF40214522C60778003A13B2 /* JMEmptyAnimatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = BF40214322C60778003A13B2 /* JMEmptyAnimatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF40214622C60778003A13B2 /* JMEmptyAnimatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BF40214422C60778003A13B2 /* JMEmptyAnimatedObject.m */; };
+		BF40214922C60B11003A13B2 /* JMEmptyAnimationGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = BF40214722C60B11003A13B2 /* JMEmptyAnimationGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF40214A22C60B11003A13B2 /* JMEmptyAnimationGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = BF40214822C60B11003A13B2 /* JMEmptyAnimationGroup.m */; };
+		BF40215222C620C6003A13B2 /* JMEmptyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF40215022C620C6003A13B2 /* JMEmptyTableViewCell.m */; };
+		BF40215322C620C6003A13B2 /* JMEmptyTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = BF40215122C620C6003A13B2 /* JMEmptyTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF40215622C621B1003A13B2 /* JMEmptyCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = BF40215422C621B0003A13B2 /* JMEmptyCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF40215722C621B1003A13B2 /* JMEmptyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF40215522C621B1003A13B2 /* JMEmptyCollectionViewCell.m */; };
+		BF40217B22C6F46A003A13B2 /* UIView+JMEmptyAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = BF40217922C6F46A003A13B2 /* UIView+JMEmptyAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF40217C22C6F46A003A13B2 /* UIView+JMEmptyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF40217A22C6F46A003A13B2 /* UIView+JMEmptyAnimation.m */; };
+		BF40218422C6FCBD003A13B2 /* JMEmptyConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = BF40218222C6FCBD003A13B2 /* JMEmptyConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF40218522C6FCBD003A13B2 /* JMEmptyConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = BF40218322C6FCBD003A13B2 /* JMEmptyConfig.m */; };
+		BF40218B22C74C4D003A13B2 /* JMEmptyTableAnimatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = BF40218922C74C4D003A13B2 /* JMEmptyTableAnimatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF40218C22C74C4D003A13B2 /* JMEmptyTableAnimatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BF40218A22C74C4D003A13B2 /* JMEmptyTableAnimatedObject.m */; };
+		BF40218F22C74C78003A13B2 /* JMEmptyCollectionAnimatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = BF40218D22C74C78003A13B2 /* JMEmptyCollectionAnimatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF40219022C74C78003A13B2 /* JMEmptyCollectionAnimatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BF40218E22C74C78003A13B2 /* JMEmptyCollectionAnimatedObject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF40212C22C603C6003A13B2 /* JMEmptyAnimateView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JMEmptyAnimateView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF40212F22C603C6003A13B2 /* JMEmptyAnimateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMEmptyAnimateView.h; sourceTree = "<group>"; };
+		BF40213022C603C6003A13B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF40214322C60778003A13B2 /* JMEmptyAnimatedObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMEmptyAnimatedObject.h; sourceTree = "<group>"; };
+		BF40214422C60778003A13B2 /* JMEmptyAnimatedObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMEmptyAnimatedObject.m; sourceTree = "<group>"; };
+		BF40214722C60B11003A13B2 /* JMEmptyAnimationGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMEmptyAnimationGroup.h; sourceTree = "<group>"; };
+		BF40214822C60B11003A13B2 /* JMEmptyAnimationGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMEmptyAnimationGroup.m; sourceTree = "<group>"; };
+		BF40215022C620C6003A13B2 /* JMEmptyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMEmptyTableViewCell.m; sourceTree = "<group>"; };
+		BF40215122C620C6003A13B2 /* JMEmptyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMEmptyTableViewCell.h; sourceTree = "<group>"; };
+		BF40215422C621B0003A13B2 /* JMEmptyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMEmptyCollectionViewCell.h; sourceTree = "<group>"; };
+		BF40215522C621B1003A13B2 /* JMEmptyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMEmptyCollectionViewCell.m; sourceTree = "<group>"; };
+		BF40217922C6F46A003A13B2 /* UIView+JMEmptyAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JMEmptyAnimation.h"; sourceTree = "<group>"; };
+		BF40217A22C6F46A003A13B2 /* UIView+JMEmptyAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JMEmptyAnimation.m"; sourceTree = "<group>"; };
+		BF40218222C6FCBD003A13B2 /* JMEmptyConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMEmptyConfig.h; sourceTree = "<group>"; };
+		BF40218322C6FCBD003A13B2 /* JMEmptyConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMEmptyConfig.m; sourceTree = "<group>"; };
+		BF40218922C74C4D003A13B2 /* JMEmptyTableAnimatedObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMEmptyTableAnimatedObject.h; sourceTree = "<group>"; };
+		BF40218A22C74C4D003A13B2 /* JMEmptyTableAnimatedObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMEmptyTableAnimatedObject.m; sourceTree = "<group>"; };
+		BF40218D22C74C78003A13B2 /* JMEmptyCollectionAnimatedObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMEmptyCollectionAnimatedObject.h; sourceTree = "<group>"; };
+		BF40218E22C74C78003A13B2 /* JMEmptyCollectionAnimatedObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMEmptyCollectionAnimatedObject.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF40212922C603C6003A13B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF40212222C603C6003A13B2 = {
+			isa = PBXGroup;
+			children = (
+				BF40212E22C603C6003A13B2 /* JMEmptyAnimateView */,
+				BF40212D22C603C6003A13B2 /* Products */,
+				BF8A388D22C9BE76005AE3BF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF40212D22C603C6003A13B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF40212C22C603C6003A13B2 /* JMEmptyAnimateView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF40212E22C603C6003A13B2 /* JMEmptyAnimateView */ = {
+			isa = PBXGroup;
+			children = (
+				BF40217822C6F440003A13B2 /* Extensinons */,
+				BF40214F22C620C6003A13B2 /* JMCell */,
+				BF40212F22C603C6003A13B2 /* JMEmptyAnimateView.h */,
+				BF40214322C60778003A13B2 /* JMEmptyAnimatedObject.h */,
+				BF40214422C60778003A13B2 /* JMEmptyAnimatedObject.m */,
+				BF40218922C74C4D003A13B2 /* JMEmptyTableAnimatedObject.h */,
+				BF40218A22C74C4D003A13B2 /* JMEmptyTableAnimatedObject.m */,
+				BF40218D22C74C78003A13B2 /* JMEmptyCollectionAnimatedObject.h */,
+				BF40218E22C74C78003A13B2 /* JMEmptyCollectionAnimatedObject.m */,
+				BF40214722C60B11003A13B2 /* JMEmptyAnimationGroup.h */,
+				BF40214822C60B11003A13B2 /* JMEmptyAnimationGroup.m */,
+				BF40213022C603C6003A13B2 /* Info.plist */,
+				BF40218222C6FCBD003A13B2 /* JMEmptyConfig.h */,
+				BF40218322C6FCBD003A13B2 /* JMEmptyConfig.m */,
+			);
+			path = JMEmptyAnimateView;
+			sourceTree = "<group>";
+		};
+		BF40214F22C620C6003A13B2 /* JMCell */ = {
+			isa = PBXGroup;
+			children = (
+				BF40215122C620C6003A13B2 /* JMEmptyTableViewCell.h */,
+				BF40215022C620C6003A13B2 /* JMEmptyTableViewCell.m */,
+				BF40215422C621B0003A13B2 /* JMEmptyCollectionViewCell.h */,
+				BF40215522C621B1003A13B2 /* JMEmptyCollectionViewCell.m */,
+			);
+			path = JMCell;
+			sourceTree = "<group>";
+		};
+		BF40217822C6F440003A13B2 /* Extensinons */ = {
+			isa = PBXGroup;
+			children = (
+				BF40217922C6F46A003A13B2 /* UIView+JMEmptyAnimation.h */,
+				BF40217A22C6F46A003A13B2 /* UIView+JMEmptyAnimation.m */,
+			);
+			path = Extensinons;
+			sourceTree = "<group>";
+		};
+		BF8A388D22C9BE76005AE3BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BF40212722C603C6003A13B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF40213122C603C6003A13B2 /* JMEmptyAnimateView.h in Headers */,
+				BF40214922C60B11003A13B2 /* JMEmptyAnimationGroup.h in Headers */,
+				BF40215322C620C6003A13B2 /* JMEmptyTableViewCell.h in Headers */,
+				BF40218422C6FCBD003A13B2 /* JMEmptyConfig.h in Headers */,
+				BF40217B22C6F46A003A13B2 /* UIView+JMEmptyAnimation.h in Headers */,
+				BF40218F22C74C78003A13B2 /* JMEmptyCollectionAnimatedObject.h in Headers */,
+				BF40218B22C74C4D003A13B2 /* JMEmptyTableAnimatedObject.h in Headers */,
+				BF40214522C60778003A13B2 /* JMEmptyAnimatedObject.h in Headers */,
+				BF40215622C621B1003A13B2 /* JMEmptyCollectionViewCell.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BF40212B22C603C6003A13B2 /* JMEmptyAnimateView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF40213422C603C6003A13B2 /* Build configuration list for PBXNativeTarget "JMEmptyAnimateView" */;
+			buildPhases = (
+				BF40212722C603C6003A13B2 /* Headers */,
+				BF40212822C603C6003A13B2 /* Sources */,
+				BF40212922C603C6003A13B2 /* Frameworks */,
+				BF40212A22C603C6003A13B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JMEmptyAnimateView;
+			productName = JMEmptyAnimateView;
+			productReference = BF40212C22C603C6003A13B2 /* JMEmptyAnimateView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF40212322C603C6003A13B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = com.jimmy;
+				TargetAttributes = {
+					BF40212B22C603C6003A13B2 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = BF40212622C603C6003A13B2 /* Build configuration list for PBXProject "JMEmptyAnimateView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BF40212222C603C6003A13B2;
+			productRefGroup = BF40212D22C603C6003A13B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF40212B22C603C6003A13B2 /* JMEmptyAnimateView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF40212A22C603C6003A13B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF40212822C603C6003A13B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF40219022C74C78003A13B2 /* JMEmptyCollectionAnimatedObject.m in Sources */,
+				BF40218C22C74C4D003A13B2 /* JMEmptyTableAnimatedObject.m in Sources */,
+				BF40215222C620C6003A13B2 /* JMEmptyTableViewCell.m in Sources */,
+				BF40214622C60778003A13B2 /* JMEmptyAnimatedObject.m in Sources */,
+				BF40218522C6FCBD003A13B2 /* JMEmptyConfig.m in Sources */,
+				BF40214A22C60B11003A13B2 /* JMEmptyAnimationGroup.m in Sources */,
+				BF40217C22C6F46A003A13B2 /* UIView+JMEmptyAnimation.m in Sources */,
+				BF40215722C621B1003A13B2 /* JMEmptyCollectionViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BF40213222C603C6003A13B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BF40213322C603C6003A13B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BF40213522C603C6003A13B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = JMEmptyAnimateView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy.JMEmptyAnimateView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF40213622C603C6003A13B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = JMEmptyAnimateView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy.JMEmptyAnimateView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF40212622C603C6003A13B2 /* Build configuration list for PBXProject "JMEmptyAnimateView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF40213222C603C6003A13B2 /* Debug */,
+				BF40213322C603C6003A13B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF40213422C603C6003A13B2 /* Build configuration list for PBXNativeTarget "JMEmptyAnimateView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF40213522C603C6003A13B2 /* Debug */,
+				BF40213622C603C6003A13B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF40212322C603C6003A13B2 /* Project object */;
+}
