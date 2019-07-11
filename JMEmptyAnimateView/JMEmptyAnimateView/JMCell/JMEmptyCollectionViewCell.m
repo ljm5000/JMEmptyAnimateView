@@ -39,6 +39,8 @@
             CGFloat height = CGRectGetHeight(view.frame);
             if (witdh*height <orgArea*0.8f) {
                 [view addMaskLayer];
+            }else{
+                [view endAnimation];
             }
         }
     }

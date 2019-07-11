@@ -72,15 +72,16 @@
     if (self.cellForRow) {
         cell = self.cellForRow(tableView,indexPath);
     }else{
-        cell = [tableView dequeueReusableCellWithIdentifier:self.defautlCellIdentiy];
+        cell = [tableView dequeueReusableCellWithIdentifier:self.defautlCellIdentiy forIndexPath:indexPath];
     }
-    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.isAnimation = self.isAnimation;
+    
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
 }
 
 

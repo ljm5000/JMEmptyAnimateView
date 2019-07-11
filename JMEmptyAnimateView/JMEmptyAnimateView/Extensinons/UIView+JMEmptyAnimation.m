@@ -17,8 +17,7 @@ static NSString *animatinKey=@"animatinKey";
 static NSString *maskKey = @"maskKey";
 
 -(void)addMaskLayer{
-    self.maskLayer.frame =self.bounds;
-    self.maskLayer.backgroundColor =  JMCONFIG_MANAGER.bgColor.CGColor;
+  
     
 }
 -(CALayer *)maskLayer{
@@ -26,14 +25,15 @@ static NSString *maskKey = @"maskKey";
     CALayer * maskObjcet = objc_getAssociatedObject(self,&maskKey);
     if (!maskObjcet) {
         maskObjcet = [CALayer layer];
-        maskObjcet.backgroundColor = [UIColor whiteColor].CGColor;
-        maskObjcet.bounds = self.bounds;
-//        maskObjcet.cornerRadius = 5.0f;
+        
+        maskObjcet.cornerRadius = 5.0f;
         maskObjcet.zPosition = 98;
+        
+        maskObjcet.backgroundColor =  JMCONFIG_MANAGER.bgColor.CGColor;
         [self.layer addSublayer:maskObjcet];
         objc_setAssociatedObject(self, &maskKey, maskObjcet, OBJC_ASSOCIATION_RETAIN);
     }
-    
+    maskObjcet.frame =self.bounds;
     return maskObjcet;
 }
 
@@ -53,6 +53,7 @@ static NSString *maskKey = @"maskKey";
 
 -(void)startScaleX{
     self.animationLayer.bounds = self.bounds;
+    self.maskLayer.hidden = NO;
     if ([self.animationLayer animationForKey:@"packupAnimation"]) {
         return;
     }

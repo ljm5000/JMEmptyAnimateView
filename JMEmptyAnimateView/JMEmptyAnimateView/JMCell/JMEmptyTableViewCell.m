@@ -14,6 +14,10 @@
 -(void)dealloc{
     [JMCONFIG_MANAGER showLog:[NSString stringWithFormat:@"dealloc %@",[[self class] description]]];
 }
+-(void)awakeFromNib{
+    [super awakeFromNib];
+    [self startAnimation];
+}
 -(void)setIsAnimation:(BOOL)isAnimation{
     _isAnimation = isAnimation;
     if (isAnimation) {
@@ -28,14 +32,19 @@
     CGFloat orgWitdh = CGRectGetWidth(self.contentView.frame);
     CGFloat orgHeight = CGRectGetHeight(self.contentView.frame);
     CGFloat orgArea = orgWitdh*orgHeight;
+    
     for (UIView*view in self.contentView.subviews) {
         if ([view isKindOfClass:[UILabel class]]) {
             [view startScaleX];
         }else{
+            
             CGFloat witdh = CGRectGetWidth(view.frame);
             CGFloat height = CGRectGetHeight(view.frame);
-            if (witdh*height <orgArea*0.8f) {
-                [view addMaskLayer];
+            CGFloat t = witdh*height;
+            if (t < orgArea*0.5f ) {
+                view.maskLayer.hidden = NO;
+            }else{
+                view.maskLayer.hidden = YES;
             }
         }
     }
